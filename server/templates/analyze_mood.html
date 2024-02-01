@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Asuno-AI AnalyzeMood</h1>
+
+    <!-- Форма для анализа настроения -->
+    <form method="POST" action="{{ url_for('analyze_mood') }}">
+        <label for="text">Enter Text:</label>
+        <textarea name="text" id="text" rows="4" required></textarea>
+
+        <label for="rating">Rate Your Mood (1-10):</label>
+        <input type="number" name="rating" id="rating" min="1" max="10" required>
+
+        <button type="submit" id="analyze-btn">Analyze Mood</button>
+    </form>
+
+    <!-- Всплывающее окно для процесса обучения -->
+    <div id="popup" style="display: none;">
+        <p id="popup-content"></p>
+    </div>
+
+    <!-- Результаты анализа настроения -->
+    {% if response %}
+        <h2>Analysis Results:</h2>
+        <p>Sentiment: {{ response['sentiment'] }}</p>
+        <p>Confidence: {{ response['confidence'] }}</p>
+        <p>Rating: {{ response['rating'] }}</p>
+        <p>Average Rating: {{ response['average_rating'] }}</p>
+        <p>{{ response['message'] }}</p>
+
+        {% if response['sentiment'] == 'положительное' %}
+            <p>Ответ на положительное настроение: Ваше положительное настроение вдохновляет нас!</p>
+        {% elif response['sentiment'] == 'отрицательное' %}
+            <p>Ответ на отрицательное настроение: Мы сожалеем, что у вас не самое лучшее настроение. Мы здесь, чтобы помочь!</p>
+        {% else %}
+            <p>Ответ на нейтральное настроение: Надеемся, ваш день проходит хорошо!</p>
+        {% endif %}
+    {% endif %}
+
+    <!-- Консоль для взаимодействия с AI -->
+    <div>
+        <h2>AI Console</h2>
+        <input type="text" id="commandInput" placeholder="Enter command">
+        <button onclick="sendCommand()">Send Command</button>
+    </div>
+
+    <!-- Скрипты для SocketIO -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+        // Показываем всплывающее окно
+        socket.on('show_popup', function(data) {
+            document.getElementById('popup-content').innerText = data.data;
+            document.getElementById('popup').style.display = 'block';
+        });
+
+        // Скрываем всплывающее окно
+        socket.on('hide_popup', function(data) {
+            document.getElementById('popup').style.display = 'none';
+        });
+
+        // Функция для отправки команды на сервер
+        function sendCommand() {
+            var commandInput = document.getElementById('commandInput');
+            var command = commandInput.value;
+            socket.emit('command', {'command': command});
+            commandInput.value = '';  // Очищаем поле ввода после отправки команды
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,39 @@
+INFO:disnake.client:logging in using static token
+INFO:disnake.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:disnake.gateway:Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-fzrz",{"micros":132712,"calls":["id_created",{"micros":1086,"calls":[]},"session_lookup_time",{"micros":1936,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-3",{"micros":129058,"calls":["start_session",{"micros":113675,"calls":["discord-api-7d54b6ddd4-f2pwt",{"micros":109002,"calls":["get_user",{"micros":25854},"get_guilds",{"micros":10520},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":58,"calls":[]},"presence_started",{"micros":249,"calls":[]},"guilds_started",{"micros":194,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":14854,"calls":[]},"connect_finished",{"micros":14860,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 9f6fc2dce041312f5e1d84da143bf2a9, Resume URL: wss://gateway-us-east1-d.discord.gg).
+INFO:disnake.voice_client:Connecting to voice...
+INFO:disnake.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:disnake.voice_client:Voice handshake complete. Endpoint found frankfurt4488.discord.media
+INFO:disnake.gateway:selected the voice protocol for use (xsalsa20_poly1305_lite)
+INFO:disnake.gateway:received secret key for voice connection
+INFO:disnake.client:logging in using static token
+INFO:disnake.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:disnake.gateway:Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-ljzs",{"micros":491185,"calls":["id_created",{"micros":1465,"calls":[]},"session_lookup_time",{"micros":2764,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-273",{"micros":485943,"calls":["start_session",{"micros":425282,"calls":["discord-api-7d54b6ddd4-lmk4n",{"micros":386054,"calls":["get_user",{"micros":99652},"get_guilds",{"micros":22547},"send_scheduled_deletion_message",{"micros":15},"guild_join_requests",{"micros":3},"authorized_ip_coro",{"micros":18}]}]},"starting_guild_connect",{"micros":64,"calls":[]},"presence_started",{"micros":14652,"calls":[]},"guilds_started",{"micros":209,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":45700,"calls":[]},"connect_finished",{"micros":45707,"calls":[]},"build_ready",{"micros":25,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}] (Session ID: a18beadf07391f8c5be76eea127302f7, Resume URL: wss://gateway-us-east1-d.discord.gg).
+INFO:disnake.voice_client:Connecting to voice...
+INFO:disnake.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:disnake.voice_client:Voice handshake complete. Endpoint found frankfurt4488.discord.media
+INFO:disnake.gateway:selected the voice protocol for use (xsalsa20_poly1305_lite)
+INFO:disnake.gateway:received secret key for voice connection
+INFO:disnake.client:logging in using static token
+INFO:disnake.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:disnake.gateway:Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-grzh",{"micros":75962,"calls":["id_created",{"micros":1214,"calls":[]},"session_lookup_time",{"micros":1492,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-199",{"micros":72447,"calls":["start_session",{"micros":53859,"calls":["discord-api-7d54b6ddd4-b8cb5",{"micros":46669,"calls":["get_user",{"micros":9717},"get_guilds",{"micros":4225},"send_scheduled_deletion_message",{"micros":11},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":11}]}]},"starting_guild_connect",{"micros":74,"calls":[]},"presence_started",{"micros":306,"calls":[]},"guilds_started",{"micros":224,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":17946,"calls":[]},"connect_finished",{"micros":17958,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 92c7cbd07369b711220aa0a9f3143eaf, Resume URL: wss://gateway-us-east1-b.discord.gg).
+INFO:disnake.voice_client:Connecting to voice...
+INFO:disnake.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:disnake.voice_client:Voice handshake complete. Endpoint found frankfurt4488.discord.media
+INFO:disnake.gateway:selected the voice protocol for use (xsalsa20_poly1305_lite)
+INFO:disnake.gateway:received secret key for voice connection
+INFO:disnake.voice_client:Disconnecting from voice normally, close code 1000.
+INFO:disnake.voice_client:The voice handshake is being terminated for Channel ID 1172260319553392749 (Guild ID 1172260317879881829)
+INFO:disnake.voice_client:Connecting to voice...
+INFO:disnake.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:disnake.voice_client:Voice handshake complete. Endpoint found frankfurt4488.discord.media
+INFO:disnake.gateway:selected the voice protocol for use (xsalsa20_poly1305_lite)
+INFO:disnake.gateway:received secret key for voice connection
+INFO:disnake.client:logging in using static token
+INFO:disnake.gateway:Shard ID None has sent the IDENTIFY payload.
+INFO:disnake.gateway:Shard ID None has connected to Gateway: ["gateway-prd-us-east1-b-rmpj",{"micros":102595,"calls":["id_created",{"micros":1278,"calls":[]},"session_lookup_time",{"micros":1849,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-28",{"micros":99021,"calls":["start_session",{"micros":81029,"calls":["discord-api-7d54b6ddd4-dk5c9",{"micros":75240,"calls":["get_user",{"micros":10546},"get_guilds",{"micros":3709},"send_scheduled_deletion_message",{"micros":13},"guild_join_requests",{"micros":18011},"authorized_ip_coro",{"micros":11}]}]},"starting_guild_connect",{"micros":72,"calls":[]},"presence_started",{"micros":7630,"calls":[]},"guilds_started",{"micros":206,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10046,"calls":[]},"connect_finished",{"micros":10051,"calls":[]},"build_ready",{"micros":28,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 494865b23cc02d11ce5f440842bb7e87, Resume URL: wss://gateway-us-east1-b.discord.gg).
+INFO:disnake.voice_client:Connecting to voice...
+INFO:disnake.voice_client:Starting voice handshake... (connection attempt 1)
+INFO:disnake.voice_client:Voice handshake complete. Endpoint found frankfurt4488.discord.media
+INFO:disnake.gateway:selected the voice protocol for use (xsalsa20_poly1305_lite)
+INFO:disnake.gateway:received secret key for voice connection

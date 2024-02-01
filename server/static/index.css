@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.container {
+    position: absolute;
+    left: 100%;
+    top: 8%;
+}
+
+.menu {
+    background-color: #f4f4f4;
+    padding: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 1vw;
+    z-index: 1;
+    display: none;
+    transform: translate(0, -50%);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 1vw;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 2vw;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 2vh;
+}
+
+.menu a:hover {
+    color: #3498db;
+}
+
+.text {
+    position: absolute;
+    left: 100%;
+    top: 15%;
+    color: #fff;
+}
+
+#roundButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    right: 90%; /* Уменьшено значение для смещения влево */
+    transform: translate(0, -50%);
+}
+
+#roundButton:hover {
+    background-color: #2980b9;
+}
+
+#conbt {
+    position: absolute;
+    left: 3vw;
+}
+
+/* Медиа-запрос для экранов с шириной меньше 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        position: absolute;
+        left: 100%;
+        top: 50%;
+    }
+
+    .text {
+        left: 1vw;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+
+    .menu {
+        left: 1vw;
+        top: 60%;
+        transform: translate(0, -50%);
+    }
+
+    #conbt {
+        left: 1vw;
+    }
+
+    #roundButton {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: 85%; /* Уменьшено значение для смещения влево */
+        transform: translate(0, -50%);
+    }
+}

@@ -1,0 +1,44 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuno-AI Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../static/index.css') }}">
+
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Asuno-AI</h1>
+    </div>
+
+    <div class="left-panel">
+        {% if current_user.is_authenticated %}
+            <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+    </div>
+
+    <div class="content">
+        <a href="{{ url_for('analyze_mood') }}">Analyze Mood</a>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <p>Hello, {{ current_user.username }}!</p>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <button type="button" id="roundButton" >Нажми меня</button>
+    </div>
+
+    <script src="../static/index.js"></script>
+</body>
+</html>
